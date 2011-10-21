@@ -9,7 +9,7 @@
 	while (<>) {
 	- 細野真宏 / 経済ニュースが面白いほどわかる本<日本経済編> / 中経出版
 	perl -ne 'if(/WN|\d:/){s/<.*?>//g;print}' k2ad.shtml
-	"<" と ">" でくくった 
+	"<" と ">" でくくった
 	| < Bye
 	| for (my $i = 1; $i <= 10; $i++) { print "$i\n"; sleep 1; }
 	| hex2bdf < unifont.hex > unifont.bdf

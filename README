@@ -106,7 +106,7 @@ usage: chalow [options] <file> [file]...
 - インデックスページ (index.html) で最近何日分を表示するか
 - インデックスページのテンプレート (※5)
 - 月ページのテンプレート (※5)
-- 自動文字列置換 (※6) 
+- 自動文字列置換 (※6)
 - CSS ファイル
 - 月ページに表示する日付の順番 (降順 or 昇順) の調整
 - タブによるインデントをなくすか
@@ -118,7 +118,7 @@ usage: chalow [options] <file> [file]...
 - RSS ファイルを出力するか
 - ...
 
-※5 インデックスページと月ページの HTML テンプレートは 
+※5 インデックスページと月ページの HTML テンプレートは
 $index_page_template, $month_page_template
 で設定する。詳しくは cl.conf のコメントを参照されたい。
 
@@ -127,7 +127,7 @@ $index_page_template, $month_page_template
 のときに適用してくれるというわけ。
 
   例: "NAISTO" を "<a href="http://nais.to/">NAISTO</a>" に、
-  "google" を "<a href="http://www.google.com/">google</a>" 
+  "google" を "<a href="http://www.google.com/">google</a>"
   に変換する。
 	$auto_replace = '
 	s!(NAISTO)!<a href="http://nais.to/">$1</a>!g;
@@ -156,7 +156,7 @@ ChangeLog の特殊な記法
 
 
 - 日付で参照リンク: "[YYYY-MM-DD]" という文字列は、自動的に過去の項目
-  への参照リンクへ変換される。"[YYYY-MM-DD-I]" という風にアイテム 
+  への参照リンクへ変換される。"[YYYY-MM-DD-I]" という風にアイテム
   No. も指定できる。
 
 	先日[2001-12-01]、どこかへ行った。
@@ -168,13 +168,13 @@ ChangeLog の特殊な記法
 - 任意の URL へのリンク
 
   「単語|URL」を 2 つの半角カギカッコで囲むとを任意の URL へのリンク
-  になります。例： 
+  になります。例：
 	[[Yahoo!|http://www.yahoo.co.jp/]]
-	
+
   このとき URL の末尾が jpg,jpeg,png,gif だと IMG タグに展開されます。
   （指定した単語がALTに設定される）。例：
 	[[図|image/gazou.png]]
-	
+
   「単語」の末尾が jpg,jpeg,png,gif だとクリック可能な IMG タグに展
   開されます。IMG が URL へのリンクになります。例：
 	[[image/gazou.png|http://nais.to/~yto/]]
@@ -205,7 +205,7 @@ ChangeLog の特殊な記法
 	 | これは引用ではない
 
   または、">>" と "<<" で囲まれた領域が blockquote で囲まれる。
-	       
+
 	>>
 	引用
 	引用
@@ -239,7 +239,7 @@ ChangeLog の特殊な記法
 - 「続きを読む」の表記
 
   '====' と記述すると「Read More...」というリンクができ item page へ
-  ジャンプします。 
+  ジャンプします。
   item page を出すようにしたとき($page_mode=2)のみ機能します。
 
 
@@ -274,7 +274,7 @@ ChangeLog の特殊な記法
 
 	* message-top:
 	<p>美食家の末は乞食 --- ベンジャミン・フランクリン</p>
-	
+
 	* message-bottom:
 	<span style="font-size:small">♪ Jeith Jarrett / La Scala</span>
 
@@ -314,6 +314,6 @@ ChengaLog ファイルの日付行は、以下のフォーマットでなけれ�
 
 しかし、パッケージに含まれている clweek.pl で日付フォーマッ
 トの変換ができる。
-使い方: 
+使い方:
 	% ./clweek.pl ChangeLog > ChangeLog-new
 

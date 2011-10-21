@@ -3,7 +3,7 @@ h1,h2,h3,h4,h5,h6 {
   padding:5px;
 }
 
-div { 
+div {
   border:solid 1px darkblue;
   padding:5px;
 }
@@ -12,28 +12,28 @@ span {
   border:solid 1px skyblue;
 }
 
-p { 
+p {
   border:solid 1px purple;
   padding:5px;
 }
 
-blockquote { 
+blockquote {
   border:solid 1px brown;
   padding:5px;
   margin-top:3px;
   margin-bottom:3px;
 }
 
-td { 
+td {
   border:solid 1px tan;
 }
 
-pre { 
+pre {
   border:solid 1px palegreen;
   padding:5px;
 }
 
-form { 
+form {
   border:solid 1px firebrick;
   padding:5px;
 }

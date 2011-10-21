@@ -208,7 +208,7 @@ my $page_template = << "__TEMPLE"
 <link rel=stylesheet href="$css_file" media=all>
 </head><body><a href="index.html">ChangeLog INDEX</a>
 
-<form method="get" action="clsearch.cgi" 
+<form method="get" action="clsearch.cgi"
     enctype="application/x-www-form-urlencoded">
 <input type="text" name="key" value="@{[$q->escapeHTML($key)]}" />
 <input type="checkbox" name="mode" value="1" @{[($mode)? "checked":""]}/>
@@ -224,7 +224,7 @@ my $page_template = << "__TEMPLE"
 <div class="body">$outstr</div>
 <p>$navip $bar $navin</p>
 <a href="./">ChangeLog INDEX</a>
-<div style="text-align:right">Powered by 
+<div style="text-align:right">Powered by
 <a href="http://chalow.org/"><strong>chalow</strong></a></div>
 </body></html>
 __TEMPLE

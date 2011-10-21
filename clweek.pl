@@ -28,7 +28,7 @@ while (<>) {
 
     # for  Mon Jun 12 08:05:49 2000  YAM Tat  <yto@example.com>
     s/^([A-Z]..)\s([A-Z]..)\s+(\d+).+(\d{4})/
-        sprintf "%04d-%02d-%02d (%s)", $4, $mon{$2}, $3, 
+        sprintf "%04d-%02d-%02d (%s)", $4, $mon{$2}, $3,
 	get_weekday_name($4, $mon{$2}, $3)/ex;
 
     print;

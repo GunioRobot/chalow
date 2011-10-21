@@ -118,7 +118,7 @@ my $day_page_template = << "___DAY_PAGE_TEMPLATE"
 <TMPL_IF name=back><a href="<TMPL_VAR name=back>.html">Prev Day</a></TMPL_IF>
 <TMPL_IF name=next> / <a href="<TMPL_VAR name=next>.html">Next Day</a></TMPL_IF>
 <h1><a href="index.html"><TMPL_VAR name=cl_name></a></h1>
-<TMPL_VAR name=content> 
+<TMPL_VAR name=content>
 <p class="calendar"><a href="<TMPL_VAR name=ym>.html"><TMPL_VAR name=ym></a>
  / <TMPL_VAR name=day_list></p>
 <p class="calendar"><TMPL_VAR name=month_page_list></p>
@@ -150,7 +150,7 @@ my $item_page_template = << "___PAGE_TEMPLATE"
 <div class="section">
 <p><TMPL_VAR name=content></p>
 <TMPL_IF name=referrer>
- <div class="referer"><span>Referrer (Inside): 
+ <div class="referer"><span>Referrer (Inside):
  <TMPL_VAR name=referrer></span></div>
 </TMPL_IF>
 <p><a href="<TMPL_VAR name=ymdi>.html">permlink</a></p>
@@ -194,7 +194,7 @@ my $item_template = << "EACHITEM"
 <div class="section">
 <p><TMPL_VAR name=header><TMPL_VAR name=cat><TMPL_VAR name=content></p>
 <TMPL_IF name=referrer>
- <div class="referer"><span>Referrer (Inside): 
+ <div class="referer"><span>Referrer (Inside):
  <TMPL_VAR name=referrer></span></div>
 </TMPL_IF>
 </div>
@@ -212,7 +212,7 @@ my $entry_template = << "DAYENTRY"
 </TMPL_IF>
 <TMPL_VAR name=content>
 <TMPL_IF name=referrer>
- <div class="referer"><span>Referrer (Inside): 
+ <div class="referer"><span>Referrer (Inside):
  <TMPL_VAR name=referrer></span></div>
 </TMPL_IF>
 <TMPL_IF name=message_bottom><TMPL_VAR name=message_bottom></TMPL_IF>
@@ -339,7 +339,7 @@ my $readmore_mode = 1;
 my $readmore_tag = "====";
 
 ### chalow 普及のため HTML の一番下にリンクを表示する。できれば消さないで。
-my $signature = qq(<p class="footer">Powered by 
+my $signature = qq(<p class="footer">Powered by
 <a href="http://chalow.org/">chalow</a></p>);
 
 ### コマンドライン引数
